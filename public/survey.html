@@ -1,121 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Reservation Page</title>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
-<form>
 
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">What's Your Perfect Drink?</h1>
+            <p class="lead">Just answer 10 questions, party all day long with your favorite boozy companion.</p>
+            <hr class="my-4">
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">Example multiple select</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
+        <p><b>Results:</b> <div id="results"></div></p>
 
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+        <form action="">
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">How typically do you drink craft cocktails? (1=Not Often 5=It's my Jam!)</label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">3</option>
+                    <option>4</option>
+                    <option>5</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">How dark do you like main spirit to be? 1 = Vodka 2 = Gin 3 = Tequila Reposado 4 = Whiskey 5 = Dark Rum</label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Drink Profile: (1 = Tall and Icy, 5 = Short and Boozy) </label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Sweetness: How sweet do you typically like your drinks to be? (1 = Sticky Sweet 5=Not Sweet At All)</label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">How acidic/sour do you typically like your drinks? 1= Sweet Tarts 5=Hold the Lemon</label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">How icy do you typically like your drinks? (1 = Martini 2 = Large Rock 3 = Just Enough 4 = Pebble Ice 5 =
+                    Gimme a Snow-Cone. I'm in!)</label>
+                    <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">How bad do you want it? (1= Many, I'm thirsty 5=I'm typically 1 and Done!)</label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">How do you like the drink served? 1=Fizzy/Bubbly 5=Up </label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">What's the go-to garnish? (1= Fresh Herbs 5=More Booze)</label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">I typically like to drink: (1=Daytime 3=Don't Matter 5=Nightcap) </label>
+                <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                    <option>2</option>
+                    <option selected="selected">3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+
+            </div>
+            <button type="submit" class="btn btn-primary submit">Submit</button>
+
+        </form>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Control Panel</p>
+            <p>
+                <a href="#" id="clear">Clear Table</a> |
+                <a href="/api/tables">API Table Link</a> |
+                <a href="/api/waitlist">API Wait List</a> |
+                <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a>
+            </p>
         </div>
-    </form>
+    </footer>
+</body>
+<script>    
+$(document).ready(function(){
+    $("button").click(function(){
+        var x = $("form").serializeArray();
+        $.each(x, function(i, field){
+            $("#results").append(field.name + ":" + field.value + " ");
+        });
+        console.log(x)
+    });
+
+});
+
+
+      </script>

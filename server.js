@@ -13,27 +13,7 @@ var PORT = process.env.port || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// (DATA)
-// =============================================================
-var characters = [
-    {
-        "name":"Gin and Tonic",
-        "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
-        "scores":[
-            5, //sweetness
-            1, //sourness
-            4, //type of spirit? maybe one for each number
-            4, //salt
-            5, //
-            1,
-            2,
-            5,
-            4,
-            1
-          ]
-      }
-      
-];
+
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
@@ -41,7 +21,7 @@ var characters = [
 // ================================================================================
 
 require("./routing/apiRoutes")(app);
-
+require("./routing/htmlRoutes")(app);
 // =============================================================================
 // LISTENER
 // The below code effectively "starts" our server
