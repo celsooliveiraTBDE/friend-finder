@@ -13,7 +13,6 @@
 	<!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-    <link href='styles.css' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -201,9 +200,9 @@
                 <img src="${data.drinkphoto}" alt="${data.drinkname}" height="420" width="420">
 `)
             });
-            $.get("https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json&formatversion=2").then(function (response) {
-                console.log(response)
-            })
+            // $.get("https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json&formatversion=2").then(function (response) {
+            //     console.log(response)
+            // })
             $("#drinkModal").modal("show");
 
         });
