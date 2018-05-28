@@ -6,7 +6,6 @@
 var allData = require("../data/friends.js");
 var drinkData = allData.drinks;
 var surveyData = allData.surveys;
-console.log("BAAAAAA", surveyData)
 
 // ===============================================================================
 // ROUTING
@@ -40,8 +39,8 @@ module.exports = function (app) {
 
         resultarray = req.body;
 
-        console.log("badfsaf", resultarray);
-        console.log(req.length);
+        // console.log("badfsaf", resultarray);
+        // console.log(req.length);
 
         for (let x = 0; x < drinkData.length; x++) {
             console.log("drinkdata.length", drinkData.length);
