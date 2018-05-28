@@ -10,7 +10,7 @@
 var drinks = [
     {
         "name": "Gin and Tonic",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "https://ionemadamenoire.files.wordpress.com/2016/08/gin1.jpg?w=420",
         "scores": [
             5, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             1, //2. spirit color - how dark is lead spirit
@@ -26,7 +26,7 @@ var drinks = [
     },
     {
         "name": "Mojito",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "http://www.paroisse-chinon.fr/sainte-jeanne-arc-en-chinonais/2017/08/mojito-420x420.jpeg",
         "scores": [
             4, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             3, //2. spirit color - how dark is lead spirit
@@ -42,7 +42,7 @@ var drinks = [
     },
     {
         "name": "Whiskey Sour",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "https://drinkoteket.se/wp-content/uploads/whiskey-sour.jpg",
         "scores": [
             3, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             4, //2. spirit color - how dark is lead spirit
@@ -58,7 +58,7 @@ var drinks = [
     },
     {
         "name": "Pisco Sour",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "http://blog.brisky.co.in/wp-content/uploads/2016/10/featured1.jpg",
         "scores": [
             2, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             2, //2. spirit color - how dark is lead spirit
@@ -74,7 +74,7 @@ var drinks = [
     },
     {
         "name": "Manhattan",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "http://thepearlguide.co.ug/wp-content/uploads/2015/09/Rob-Roy-420x420.jpg",
         "scores": [
             3, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             4, //2. spirit color - how dark is lead spirit
@@ -90,7 +90,7 @@ var drinks = [
     },
     {
         "name": "Old Fashioned",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "https://www.thecocktailproject.com/sites/default/files/knobcreek_oldfashioned_beauty_7832-4868-Edit_thumbnail.jpg",
         "scores": [
             3, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             4, //2. spirit color - how dark is lead spirit
@@ -105,7 +105,7 @@ var drinks = [
         ]
     }, {
         "name": "Scotch on the Rocks",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCy5sVfxuaXyMhdkEMBHSOXmkZzMs5LFlPknXcoKnNJkeawYw",
         "scores": [
             3, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             5, //2. spirit color - how dark is lead spirit
@@ -120,7 +120,7 @@ var drinks = [
         ]
     }, {
         "name": "Clover Club",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "https://1806.com.au/wp-content/uploads/2011/08/clover-club-web-res-420x420.jpg",
         "scores": [
             4, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             1, //2. spirit color - how dark is lead spirit
@@ -135,7 +135,7 @@ var drinks = [
         ]
     }, {
         "name": "Margarita",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "http://tribecacitizen.com/wp-content/uploads/2014/08/Anejo-Tribeca-margarita-420x420.jpg",
         "scores": [
             5, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             2, //2. spirit color - how dark is lead spirit
@@ -150,7 +150,7 @@ var drinks = [
         ]
     }, {
         "name": "Aperol Spritz",
-        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHYHmb9WspXtXC-Xuy9aRcP2pDKJajWO1c-GEtatQZY2mWMmY",
+        "photo": "http://tribecacitizen.com/wp-content/uploads/2016/07/Tutto-Il-Giorno-Aperol-spritz-photo-by-Luca-Babini-420x277.jpg",
         "scores": [
             4, //1. drinkability - can I drink it all the time? 1-LOW /5-HIGH
             4, //2. spirit color - how dark is lead spirit

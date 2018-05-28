@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -25,12 +29,10 @@
             <div id="results"></div>
         </p>
 
-
         <form action="">
 
-
             <div class="form-group">
-                <label for="exampleFormControlSelect2">1 - How typically do you drink craft cocktails? (1=Not Often 5=It's my Jam!)</label>
+                <label for="exampleFormControlSelect2">1 - How often do you drink craft cocktails? (1=Not Often 5=It's my Jam!)</label>
                 <select name="multiple" multiple="multiple" multiple class="form-control" id="exampleFormControlSelect2">
                     <option>1</option>
                     <option>2</option>
@@ -148,11 +150,39 @@
             </p>
         </div>
     </footer>
+
+    <!-- The Modal -->
+    <div class="modal" id="drinkModal">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Your Drink of Choice: </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 <script>    
 
     $(document).ready(function () {
-        $("button").click(function () {
+
+        $("button").on("click", function (e) {
+            e.preventDefault();
             var newSurvey = $("form").serializeArray();
             $.each(newSurvey, function (i, field) {
                 $("#results").append(field.name + ":" + field.value + " ");
@@ -164,10 +194,21 @@
             $.post("/api/surveys", newSurvey, function (data) {
 
                 // the JSON with the results are passed back
-                console.log(data)
+                console.log(data);
 
+
+                $('.modal-body').html(`<h1>this ${data.drinkname} is for you </h1>
+                <img src="${data.drinkphoto}" alt="${data.drinkname}" height="420" width="420">
+`)
             });
+            $.get("https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json&formatversion=2").then(function (response) {
+                console.log(response)
+            })
+            $("#drinkModal").modal("show");
+
         });
+
+
     });
 
 </script>
