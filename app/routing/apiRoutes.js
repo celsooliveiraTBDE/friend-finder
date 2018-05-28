@@ -3,7 +3,7 @@
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
-var allData = require("../data/friends.js");
+var allData = require("../data/friends");
 var drinkData = allData.drinks;
 var surveyData = allData.surveys;
 
